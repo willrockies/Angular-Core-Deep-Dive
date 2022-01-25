@@ -1,4 +1,15 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
+<img
+  (click)="onLogoClicked()"
+  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov"
+  alt="Angular"
+/>
+<h1>{{ data.title }}</h1>
+
+<input
+  class="demo"
+  (keyup)="onKeyUp(titleInput.value)"
+  [value]="data.title"
+  #titleInput
+/>
