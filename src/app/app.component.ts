@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { COURSES } from '../db-data';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.full;
+  coreCourse = COURSES[0];
+  rxjsCourse = COURSES[1];
+  ngrxCourse = COURSES[2];
 }
